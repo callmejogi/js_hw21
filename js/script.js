@@ -22,14 +22,12 @@
 // console.log(pow(2,4));
 
 // Task 3
-function sum(a,b){
-    // if(a > 0 && a % 2 === 0)
 
-    if(b === 0){
-        return a;
-    }else{
-        return sum(a++,b);
-    }
+function sum(a,b){
+    if(b === 0) return a;
+    a++;
+    return sum(a,b-1);
 }
 
-console.log(sum(2,4))
+
+console.log(sum(300,42))
